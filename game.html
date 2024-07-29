@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 40px);
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        .day {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .day:hover {
+            background-color: #e0e0e0;
+        }
+        .day.disabled {
+            background-color: #f0f0f0;
+            cursor: default;
+        }
+        #result {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>4월 달력 게임</h1>
+    <div class="calendar">
+        <!-- 1일 이전의 공백 -->
+        <div class="day disabled"></div>
+        <div class="day disabled"></div>
+        <div class="day disabled"></div>
+        <div class="day disabled"></div>
+        <div class="day disabled"></div>
+        <div class="day disabled"></div>
+        <!-- 4월 1일부터 30일까지 -->
+        <div class="day" onclick="checkDay(1)">1</div>
+        <div class="day" onclick="checkDay(2)">2</div>
+        <div class="day" onclick="checkDay(3)">3</div>
+        <div class="day" onclick="checkDay(4)">4</div>
+        <div class="day" onclick="checkDay(5)">5</div>
+        <div class="day" onclick="checkDay(6)">6</div>
+        <div class="day" onclick="checkDay(7)">7</div>
+        <div class="day" onclick="checkDay(8)">8</div>
+        <div class="day" onclick="checkDay(9)">9</div>
+        <div class="day" onclick="checkDay(10)">10</div>
+        <div class="day" onclick="checkDay(11)">11</div>
+        <div class="day" onclick="checkDay(12)">12</div>
+        <div class="day" onclick="checkDay(13)">13</div>
+        <div class="day" onclick="checkDay(14)">14</div>
+        <div class="day" onclick="checkDay(15)">15</div>
+        <div class="day" onclick="checkDay(16)">16</div>
+        <div class="day" onclick="checkDay(17)">17</div>
+        <div class="day" onclick="checkDay(18)">18</div>
+        <div class="day" onclick="checkDay(19)">19</div>
+        <div class="day" onclick="checkDay(20)">20</div>
+        <div class="day" onclick="checkDay(21)">21</div>
+        <div class="day" onclick="checkDay(22)">22</div>
+        <div class="day" onclick="checkDay(23)">23</div>
+        <div class="day" onclick="checkDay(24)">24</div>
+        <div class="day" onclick="checkDay(25)">25</div>
+        <div class="day" onclick="checkDay(26)">26</div>
+        <div class="day" onclick="checkDay(27)">27</div>
+        <div class="day" onclick="checkDay(28)">28</div>
+        <div class="day" onclick="checkDay(29)">29</div>
+        <div class="day" onclick="checkDay(30)">30
